@@ -7,5 +7,12 @@
 </head>
 <body>
 <h1>メニュー</h1>
+@if (Auth::check())
+    <p>ログイン中</p>
+    @else
+    <p>※ログインしていません。(<a href="/login">ログイン</a>
+        <a href="/register">登録</a>)</p>
+@endif
+    <a href="/home">ログアウト</a>
 </body>
 </html>
