@@ -3,7 +3,7 @@ namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-class initproductsSeeder extends Seeder
+class productTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
