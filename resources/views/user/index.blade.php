@@ -17,18 +17,18 @@
 
 @csrf
     <header>
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
-        <a href="#">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
     </header>
     <div>
         <form action="#">
@@ -45,19 +45,21 @@
     
         @foreach($products as $product)
             <tr>
-                <th>$product -> name</th>
-                <th>$product -> price_tax</th>
-                <th>$product -> image</th>
+                <th>{{$product -> name}}</th>
+                <th>{{$product -> price}}</th>
+                <th class="img"><img src ="{{ asset('/img/' . $product -> image) }}" alt="pr_img"></th>
+                <th>{{$product -> image}}</th>
             </tr>
+
         @endforeach
 
 
         <footer>
         <div>
-            <a href="#" >
-            <a href="#" >
-            <a href="#" >
-            <a href="#" >
+            <a href="#" ></a>
+            <a href="#" ></a>
+            <a href="#" ></a>
+            <a href="#" ></a>
         </div>
         </footer> 
 </body>
