@@ -13,3 +13,11 @@ class UserController extends Controller
         return view('user.index');
     }
 }
+
+// class UserController extends Controller
+// {
+//     public function menu()
+//     {
+//         return view('user.menu');
+//     }
+// }
