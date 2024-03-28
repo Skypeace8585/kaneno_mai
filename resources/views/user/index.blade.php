@@ -30,13 +30,7 @@
         <a href="#"></a>
         <a href="#"></a>
     </header>
-    <div>
-        <form action="#">
-            Mail:<input type="email" id="mail" name="mail" placeholder="メールアドレスを入力してください"><br>
-            PW:<input type="password" id="password" name="password" placeholder="パスワードを入力してください"><br>
-            <input type="submit" value="ログイン">
-        </form>
-    </div>
+        <table border="1">
         <tr>
             <th>名前</th>
             <th>値段(税込)</th>
@@ -45,13 +39,13 @@
     
         @foreach($products as $product)
             <tr>
-                <th>{{$product -> name}}</th>
-                <th>{{$product -> price}}</th>
-                <th class="img"><img src ="{{ asset('/img/' . $product -> image) }}" alt="pr_img"></th>
-                <th>{{$product -> image}}</th>
+                <td>{{$product -> name}}</td>
+                <td>{{$product -> price}}</td>
+                <td class="img"><img src ="{{ asset('/img/' . $product -> image) }}" alt="pr_img"></td>
+                <td><input type="button" value="カートに入れる"></td>
             </tr>
-
         @endforeach
+        </table>
 
 
         <footer>
