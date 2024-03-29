@@ -50,10 +50,10 @@
 
         <footer>
         <div>
-            <a href="#" ></a>
-            <a href="#" ></a>
-            <a href="#" ></a>
-            <a href="#" ></a>
+            <a href="#" >TOP</a>
+            <a href="#" >注文履歴</a>
+            <a href="#" >呼び出し</a>
+            <a href="#" >お会計</a>
         </div>
         </footer> 
 </body>
