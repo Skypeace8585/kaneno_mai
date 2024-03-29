@@ -42,11 +42,17 @@
                 <td>{{$product -> name}}</td>
                 <td>{{$product -> price}}</td>
                 <td class="img"><img src ="{{ asset('/img/' . $product -> image) }}" alt="pr_img"></td>
-                <td><input type="button" value="カートに入れる"></td>
+                <td><button onclick='addcart("{{$product -> name}}", {{$product -> price}})'>カートに入れる</button></td>
             </tr>
         @endforeach
         </table>
+        <div id="cart" class="cart_a">
+            
+        </div>
 
+        <div id="cart_total_price" class="ca_to_pr">
+
+        </div>
 
         <footer>
         <div>
@@ -56,5 +62,6 @@
             <a href="#" ></a>
         </div>
         </footer> 
+        <script src="{{ asset('js/addcart.js') }}"></script>
 </body>
 </html>
